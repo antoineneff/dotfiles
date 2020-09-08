@@ -35,6 +35,10 @@ brew cask install appcleaner
 brew cask install discord
 brew cask install spotify
 
+# Install font
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+
 brew cleanup
 
 # Install oh-my-zsh
@@ -134,3 +138,8 @@ hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Kill affected applications
+for app in "Dashboard" "Dock" "Finder" "SystemUIServer" "Terminal" "NotificationCenter"; do
+	killall "$app" > /dev/null 2>&1
+done
