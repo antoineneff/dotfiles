@@ -3,7 +3,7 @@
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+# Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ################################
@@ -17,6 +17,7 @@ brew update
 brew upgrade
 
 # Install utils
+brew install coreutils
 brew install git
 brew install tree
 brew install bat
@@ -32,11 +33,22 @@ brew cask install the-unarchiver
 brew cask install visual-studio-code
 brew cask install appcleaner
 brew cask install discord
+brew cask install spotify
 
 brew cleanup
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Add theme to oh-my-zsh themes folder
+mv ./honukai.zsh-theme ./.oh-my-zsh/themes/
+
+# Instal nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+# Use local zshrc file
+mv zshrc .zshrc
+source .zshrc
 
 ################################
 # UPDATE MACOS DEFAULT SETTINGS
