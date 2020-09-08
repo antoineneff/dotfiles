@@ -7,6 +7,7 @@ Personal macOS related dotfiles
 
 ```bash
 cd; curl -#L https://github.com/antoineneff/dotfiles/tarball/main | tar -xzv --strip-components 1 --exclude={README.md}
+./setup.sh
 ```
 
 ### Todo
