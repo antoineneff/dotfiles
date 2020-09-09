@@ -34,6 +34,7 @@ brew cask install visual-studio-code
 brew cask install appcleaner
 brew cask install discord
 brew cask install spotify
+brew cask install insomnia
 
 # Install font
 brew tap homebrew/cask-fonts
