@@ -10,8 +10,8 @@ alias 4='cd -4'
 alias 5='cd -5'
 
 # Easy report
-alias ls='ls -l'
-alias l='gls -lAh --color=auto --group-directories-first'
+alias ls='gls -l --color'
+alias l='gls -lAh --color --group-directories-first'
 alias rmf='rm -rf'
 alias cp='cp -iv'
 alias mv='mv -iv'
@@ -33,6 +33,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date "+%a, %d %b %H:%M:%
 
 # Developer shortcuts
 alias g='git'
+alias gs='git status'
 
 # Typos
 alias :q='exit'
