@@ -22,7 +22,7 @@ brew install git
 brew install tree
 brew install bat
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Install apps
 brew cask install iterm2
