@@ -43,13 +43,19 @@ brew cask install font-fira-code
 brew cleanup
 
 # Install oh-my-zsh
-curl -L http://install.ohmyz.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Add theme to oh-my-zsh themes folder
 mv ./honukai.zsh-theme ./.oh-my-zsh/themes/
 
 # Instal nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+# Create projects directory
+mkdir projects
+
+# Add iterm profile
+mv ./iterm-profiles.json ./Library/Application Support/iTerm2/DynamicProfiles/
 
 # Use local zshrc file
 mv zshrc .zshrc
