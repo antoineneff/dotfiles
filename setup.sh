@@ -43,7 +43,7 @@ brew cask install font-fira-code
 brew cleanup
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -L http://install.ohmyz.sh | sh
 
 # Add theme to oh-my-zsh themes folder
 mv ./honukai.zsh-theme ./.oh-my-zsh/themes/
