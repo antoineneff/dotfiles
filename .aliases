@@ -31,10 +31,6 @@ alias cat='bat'
 alias e='exit'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date "+%a, %d %b %H:%M:%S" && time cat && date "+%a, %d %b %H:%M:%S"'
 
-# Developer shortcuts
-alias g='git'
-alias gs='git status'
-
 # Typos
 alias :q='exit'
 alias help='man'
