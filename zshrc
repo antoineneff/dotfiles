@@ -7,6 +7,8 @@ DISABLE_AUTO_TITLE="true"
 # Disable marking untracked files under VCS as dirty.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+ZSH_DISABLE_COMPFIX="true"
+
 # History.
 HIST_STAMPS="dd.mm.yyyy"
 
