@@ -21,6 +21,7 @@ brew install coreutils
 brew install git
 brew install tree
 brew install bat
+brew install gh
 
 brew tap homebrew/cask
 
