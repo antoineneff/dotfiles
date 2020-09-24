@@ -22,6 +22,9 @@ brew install git
 brew install tree
 brew install bat
 brew install gh
+brew install exa
+brew install httpie
+brew install mackup
 
 brew tap homebrew/cask
 
@@ -46,21 +49,14 @@ brew cleanup
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# Add theme to oh-my-zsh themes folder
-mv ./honukai.zsh-theme ./.oh-my-zsh/themes/
-
 # Instal nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 # Create projects directory
 mkdir projects
 
-# Add iterm profile
-mv ./iterm-profiles.json ./Library/Application Support/iTerm2/DynamicProfiles/
-
-# Use local zshrc file
-mv zshrc .zshrc
-source .zshrc
+# Backup dotfiles and configs with mackup
+mackup restore
 
 ################################
 # UPDATE MACOS DEFAULT SETTINGS
@@ -92,11 +88,39 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Use column view in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+# Four-letter codes for the other view modes: `icnv`, `Nlsv`, `glyv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+defaults write com.apple.dock persistent-apps -array
+
+# Hot corners
+# Possible values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+# 13: Lock Screen
+# Top left screen corner → Mission Control
+defaults write com.apple.dock wvous-tl-corner -int 2
+defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right screen corner → Desktop
+defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-modifier -int 0
 
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
@@ -112,6 +136,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Disable press-and-hold for keys in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
