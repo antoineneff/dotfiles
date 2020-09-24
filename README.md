@@ -11,5 +11,4 @@ cd; curl -#L https://github.com/antoineneff/dotfiles/tarball/main | tar -xzv --s
 ```
 
 ### Todo
-- Setup default vscode config
 - Setup ssh key
