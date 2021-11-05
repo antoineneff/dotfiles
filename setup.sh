@@ -23,6 +23,7 @@ brew install tree
 brew install bat
 brew install gh
 brew install exa
+brew install n
 brew install mackup
 
 # Install apps
@@ -48,9 +49,6 @@ brew cleanup
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# Instal nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 # Create projects directory
 mkdir projects
