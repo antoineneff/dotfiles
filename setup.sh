@@ -23,26 +23,26 @@ brew install tree
 brew install bat
 brew install gh
 brew install exa
-brew install httpie
 brew install mackup
 
-brew tap homebrew/cask
-
 # Install apps
-brew cask install iterm2
-brew cask install hammerspoon
-brew cask install firefox
-brew cask install vlc
-brew cask install the-unarchiver
-brew cask install visual-studio-code
-brew cask install appcleaner
-brew cask install discord
-brew cask install spotify
-brew cask install insomnia
+brew install iterm2
+brew install hammerspoon
+brew install firefox
+brew install vlc
+brew install the-unarchiver
+brew install visual-studio-code
+brew install appcleaner
+brew install discord
+brew install spotify
+brew install insomnia
+brew install shottr
+brew install karabiner-elements
+brew install loopback
+brew install shadow
 
 # Install font
-brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install font-cascadia-code
 
 brew cleanup
 
@@ -67,7 +67,7 @@ mackup restore
 osascript -e 'tell application "System Preferences" to quit'
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+sudo nvram StartupMute=%01
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true

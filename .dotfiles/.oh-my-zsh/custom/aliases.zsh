@@ -28,9 +28,9 @@ alias dev='cd ~/projects && l'
 # Shortcuts
 alias gs='gst'
 alias c='clear'
-alias cat='bat'
 alias e='exit'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date "+%a, %d %b %H:%M:%S" && time cat && date "+%a, %d %b %H:%M:%S"'
+alias copy='pbcopy'
 
 # Typos
 alias :q='exit'
@@ -42,6 +42,9 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Get the weather
 alias weather='curl wttr.in'
+
+# Get the tv programs of the evening
+alias tv='curl https://tv.antoine.codes'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

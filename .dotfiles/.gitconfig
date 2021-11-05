@@ -1,3 +1,5 @@
 [user]
 	email = 9216777+antoineneff@users.noreply.github.com
 	name = Antoine Neff
+[init]
+	defaultBranch = main
