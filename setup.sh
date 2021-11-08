@@ -24,7 +24,8 @@ brew install bat
 brew install gh
 brew install exa
 brew install n
-brew install mackup
+brew install tmux
+brew install fzf
 
 # Install apps
 brew install iterm2
@@ -50,11 +51,9 @@ brew cleanup
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# Create projects directory
-mkdir projects
-
-# Backup dotfiles and configs with mackup
-mackup restore
+# Create projects directories
+mkdir personal
+mkdir work
 
 ################################
 # UPDATE MACOS DEFAULT SETTINGS

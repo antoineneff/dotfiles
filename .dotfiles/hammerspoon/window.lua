@@ -17,6 +17,11 @@ units = {
   bottomleftmiddle25    = { x = 0.25, y = 0.50, w = 0.25, h = 0.50 },
   bottomrightmiddle25   = { x = 0.50, y = 0.50, w = 0.25, h = 0.50 },
   bottomright25         = { x = 0.75, y = 0.50, w = 0.25, h = 0.50 },
+  left33                = { x = 0.00, y = 0.00, w = 0.33, h = 1.00 },
+  middle33              = { x = 0.33, y = 0.00, w = 0.34, h = 1.00 },
+  right33               = { x = 0.67, y = 0.00, w = 0.33, h = 1.00 },
+  left66                = { x = 0.00, y = 0.00, w = 0.67, h = 1.00 },
+  right66               = { x = 0.33, y = 0.00, w = 0.67, h = 1.00 },
   maximum               = { x = 0.00, y = 0.00, w = 1.00, h = 1.00 }
 }
 
@@ -37,6 +42,11 @@ hs.hotkey.bind(mash, 't', function() hs.window.focusedWindow():move(units.bottom
 hs.hotkey.bind(mash, 'y', function() hs.window.focusedWindow():move(units.bottomleftmiddle25, nil, true) end)
 hs.hotkey.bind(mash, 'u', function() hs.window.focusedWindow():move(units.bottomrightmiddle25, nil, true) end)
 hs.hotkey.bind(mash, 'i', function() hs.window.focusedWindow():move(units.bottomright25, nil, true) end)
+hs.hotkey.bind(mash, 'a', function() hs.window.focusedWindow():move(units.left33, nil, true) end)
+hs.hotkey.bind(mash, 's', function() hs.window.focusedWindow():move(units.middle33, nil, true) end)
+hs.hotkey.bind(mash, 'd', function() hs.window.focusedWindow():move(units.right33, nil, true) end)
+hs.hotkey.bind(mash, 'k', function() hs.window.focusedWindow():move(units.left66, nil, true) end)
+hs.hotkey.bind(mash, 'l', function() hs.window.focusedWindow():move(units.right66, nil, true) end)
 hs.hotkey.bind(mash, 'f', function() hs.window.focusedWindow():move(units.maximum, nil, true) end)
 hs.hotkey.bind(mash, 'c', function() hs.window.focusedWindow():centerOnScreen() end)
 hs.hotkey.bind(mash, ',', function() hs.window.focusedWindow():moveOneScreenWest() end)
