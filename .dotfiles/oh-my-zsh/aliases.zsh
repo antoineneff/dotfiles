@@ -44,6 +44,10 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 # Get the weather
 alias weather='curl wttr.in'
 
+# Get internet speed test
+alias speedtest='networkQuality'
+alias fast='speedtest'
+
 # Get the tv programs of the evening
 alias tv='curl https://tv.antoine.codes'
 
