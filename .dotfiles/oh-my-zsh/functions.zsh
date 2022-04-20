@@ -16,3 +16,12 @@ function fs() {
 		du $arg .[^.]* ./*;
 	fi;
 }
+
+# Delete merged git branches
+function grmmb() {
+  branches=$(git branch --no-color --merged | grep -vE "^(\*|\+)" | grep -v $(git_main_branch) | grep -v svn)
+  if [ -n "$branches" ]
+  then
+      echo "$branches" | xargs -n 1 git branch -d
+  fi
+}
