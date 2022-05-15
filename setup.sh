@@ -32,7 +32,7 @@ brew install iterm2
 brew install hammerspoon
 brew install firefox
 brew install vlc
-brew install the-unarchiver
+brew install keka
 brew install visual-studio-code
 brew install appcleaner
 brew install discord
