@@ -41,6 +41,7 @@ brew install karabiner-elements
 brew install keka
 brew install loopback
 brew install mos
+brew install rancher
 brew install raycast
 brew install shottr
 brew install slack
