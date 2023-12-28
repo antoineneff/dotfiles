@@ -15,8 +15,5 @@ HIST_STAMPS="dd.mm.yyyy"
 # Plugins.
 plugins=(git zsh-autosuggestions)
 
-# Shortcuts.
-bindkey -s ^f "$HOME/.config/tmux/tmux-sessionizer\n"
-
 export ZSH="$HOME/.oh-my-zsh"
 source ~/.oh-my-zsh/oh-my-zsh.sh

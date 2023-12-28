@@ -23,8 +23,7 @@ alias lgrep='ls -lA | grep'
 # Bookmarks
 alias dl='cd ~/Downloads && l'
 alias doc='cd ~/Documents && l'
-alias perso='cd ~/personal && l'
-alias work='cd ~/work && l'
+alias dev='cd ~/dev && l'
 
 # Shortcuts
 alias gs='gst'

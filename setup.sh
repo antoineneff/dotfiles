@@ -16,32 +16,38 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 brew upgrade
 
+brew tap oven-sh/bun
+
 # Install utils
+brew install bat
+brew install bun
 brew install coreutils
+brew install exa
+brew install gh
 brew install git
 brew install tree
-brew install bat
-brew install gh
-brew install exa
-brew install n
-brew install tmux
-brew install fzf
+brew install volta
 
 # Install apps
-brew install iterm2
-brew install hammerspoon
-brew install firefox
-brew install vlc
-brew install keka
-brew install visual-studio-code
+brew install 1password
 brew install appcleaner
+brew install bitwarden
+brew install bruno
 brew install discord
-brew install spotify
-brew install insomnia
-brew install shottr
+brew install firefox
+brew install hammerspoon
+brew install iterm2
 brew install karabiner-elements
+brew install keka
 brew install loopback
-brew install shadow
+brew install mos
+brew install raycast
+brew install shottr
+brew install slack
+brew install spotify
+brew install tableplus
+brew install visual-studio-code
+brew install vlc
 
 # Install font
 brew install font-cascadia-code
@@ -52,8 +58,7 @@ brew cleanup
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Create projects directories
-mkdir personal
-mkdir work
+mkdir dev
 
 ################################
 # UPDATE MACOS DEFAULT SETTINGS
