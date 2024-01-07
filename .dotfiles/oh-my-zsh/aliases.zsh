@@ -10,8 +10,8 @@ alias 4='cd -4'
 alias 5='cd -5'
 
 # Easy report
-alias ls='exa -Fl'
-alias l='exa -Fla --group-directories-first'
+alias ls='eza -Fl'
+alias l='eza -Fla --group-directories-first'
 alias rmf='rm -rf'
 alias cp='cp -iv'
 alias mv='mv -iv'
