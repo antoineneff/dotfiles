@@ -23,11 +23,14 @@ brew install bat
 brew install bun
 brew install coreutils
 brew install eza
+brew install fd
 brew install gh
 brew install git
+brew install jesseduffield/lazygit/lazygit
+brew install neovim
+brew install ripgrep
 brew install tree
 brew install volta
-brew install neovim
 
 # Install apps
 brew install 1password
