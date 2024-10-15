@@ -16,18 +16,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 brew upgrade
 
-brew tap oven-sh/bun
-
 # Install utils
 brew install bat
-brew install bun
 brew install coreutils
 brew install eza
 brew install fd
 brew install gh
 brew install git
-brew install jesseduffield/lazygit/lazygit
-brew install neovim
 brew install ripgrep
 brew install tree
 brew install volta
@@ -36,7 +31,6 @@ brew install volta
 brew install 1password
 brew install appcleaner
 brew install bitwarden
-brew install bruno
 brew install discord
 brew install firefox
 brew install hammerspoon
@@ -53,6 +47,7 @@ brew install spotify
 brew install tableplus
 brew install visual-studio-code
 brew install vlc
+brew install yaak
 
 # Install font
 brew install font-cascadia-code
