@@ -1,0 +1,7 @@
+theme = catppuccin-macchiato
+font-family = CaskaydiaCove Nerd Font
+font-size = 16
+cursor-style = underline
+shell-integration-features = no-cursor
+window-width = 105
+window-height = 30

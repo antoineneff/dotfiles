@@ -26,28 +26,30 @@ brew install git
 brew install ripgrep
 brew install tree
 brew install volta
+brew install zoxide
 
 # Install apps
 brew install 1password
 brew install appcleaner
-brew install bitwarden
 brew install discord
 brew install firefox
+brew install ghostty
 brew install hammerspoon
-brew install iterm2
+brew install jordanbaird-ice
 brew install karabiner-elements
 brew install keka
 brew install loopback
 brew install mos
-brew install rancher
+brew install obsidian
+brew install orbstack
 brew install raycast
 brew install shottr
-brew install slack
 brew install spotify
 brew install tableplus
 brew install visual-studio-code
 brew install vlc
 brew install yaak
+brew install zed
 
 # Install font
 brew install font-cascadia-code
