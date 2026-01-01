@@ -23,13 +23,13 @@ brew install eza
 brew install fd
 brew install gh
 brew install git
+brew install mole
 brew install ripgrep
 brew install tree
 brew install volta
 brew install zoxide
 
 # Install apps
-brew install 1password
 brew install appcleaner
 brew install discord
 brew install firefox
@@ -42,6 +42,10 @@ brew install loopback
 brew install mos
 brew install obsidian
 brew install orbstack
+brew install proton-drive
+brew install proton-mail
+brew install proton-pass
+brew install protonvpn
 brew install raycast
 brew install shottr
 brew install spotify
@@ -171,9 +175,6 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
 hash tmutil &> /dev/null && sudo tmutil disablelocal
-
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Kill affected applications
 for app in "Dashboard" "Dock" "Finder" "SystemUIServer" "Terminal" "NotificationCenter"; do
