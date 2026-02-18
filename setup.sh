@@ -35,7 +35,6 @@ brew install discord
 brew install firefox
 brew install ghostty
 brew install hammerspoon
-brew install jordanbaird-ice
 brew install karabiner-elements
 brew install keka
 brew install loopback
@@ -50,6 +49,7 @@ brew install raycast
 brew install shottr
 brew install spotify
 brew install tableplus
+brew install thaw@beta
 brew install visual-studio-code
 brew install vlc
 brew install yaak
