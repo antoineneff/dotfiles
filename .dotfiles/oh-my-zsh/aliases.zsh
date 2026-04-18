@@ -26,6 +26,7 @@ alias doc='cd ~/Documents && l'
 alias dev='cd ~/dev && l'
 
 # Shortcuts
+alias p='pnpm'
 alias gs='gst'
 alias c='clear'
 alias e='exit'
