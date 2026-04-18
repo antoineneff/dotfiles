@@ -30,7 +30,6 @@ brew install volta
 brew install zoxide
 
 # Install apps
-brew install appcleaner
 brew install discord
 brew install firefox
 brew install ghostty
